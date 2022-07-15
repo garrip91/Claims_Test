@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %} Создание заявки {% endblock title %}
+
+{% block content %}
+<div class="container">
+    <h1>Форма создания заявки</h1>
+    <hr>
+    {# <form method="POST" action="{% url 'claim-create' %}"> #}
+        {# {% csrf_token %} #}
+        {# {{ form.as_p }} #}
+        {# <button type="submit">Сохранить</button> #}
+        {# </form> #}
+
+
+    <form method="POST" action="/claims/create/"> {% csrf_token %}
+        <div class="mb-3">
+            <label for="id_title" class="form-label">Название:</label>
+            <input class="form-control" type="text" name="title" maxlength="120" required="" id="id_title">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="id_description">Описание:</label>
+            <textarea class="form-control" name="description" cols="40" rows="10" required="" id="id_description"></textarea>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="id_type">Тип:</label>
+            <select class="form-select" name="type" id="id_type">
+                <option value="Computers" selected>Компьютеры</option>
+                <option value="Notebooks">Ноутбуки</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Сохранить</button>
+    </form>
+</div>
+
+{% endblock content %}

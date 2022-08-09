@@ -75,7 +75,7 @@ source venv/bin/activate
 3. Install python packages
 
 ```sh
-pip install -r requirements
+pip install -r requirements.txt
 ```
 
 4. Migrate base

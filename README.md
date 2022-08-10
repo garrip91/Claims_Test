@@ -119,3 +119,4 @@ Distributed under the MIT License. See [LICENSE](https://github.com/Garrip91/Cla
 * [Garrip91](https://github.com/garrip91)
 * [Claim project](https://github.com/garrip91/Claims_Test)
 * [Python](https://www.python.org/)
+#

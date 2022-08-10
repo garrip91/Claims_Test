@@ -40,7 +40,7 @@
 
 ## Built With
 
-Сайт создан с помощью Django, Python
+Сайт создан с помощью Python, Django
 
 ## Getting Started
 
